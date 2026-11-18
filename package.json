@@ -6,7 +6,7 @@
   "author": "Irina Kiseleva",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "GITHUB_PAGES=true next build",
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

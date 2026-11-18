@@ -73,25 +73,26 @@ npm run dev
 
 Приложение открывается по адресу [http://localhost:3000](http://localhost:3000).
 
-Production-сборка и запуск:
+Статическая сборка для GitHub Pages:
 
 ```bash
 npm run build
-npm run start
 ```
+
+Каталог `out` публикуется адресом [https://irinafkbd.github.io/kidrecord/](https://irinafkbd.github.io/kidrecord/). Публикация выполняется GitHub Actions после попадания изменений в `main`. В настройках репозитория источник Pages должен быть GitHub Actions.
 
 ## Команды проекта
 
-| Команда                | Назначение                               |
-| ---------------------- | ---------------------------------------- |
-| `npm run dev`          | режим разработки                         |
-| `npm run build`        | production-сборка                        |
-| `npm run start`        | запуск production-версии                 |
-| `npm run lint`         | проверка ESLint                          |
-| `npm run lint:fix`     | автоматическое исправление ESLint        |
-| `npm run format`       | форматирование Prettier                  |
-| `npm run format:check` | проверка форматирования                  |
-| `npm run type-check`   | проверка TypeScript без генерации файлов |
+| Команда                | Назначение                                |
+| ---------------------- | ----------------------------------------- |
+| `npm run dev`          | режим разработки                          |
+| `npm run build`        | статическая сборка в каталог `out`        |
+| `npm run start`        | не используется: сайт отдаёт GitHub Pages |
+| `npm run lint`         | проверка ESLint                           |
+| `npm run lint:fix`     | автоматическое исправление ESLint         |
+| `npm run format`       | форматирование Prettier                   |
+| `npm run format:check` | проверка форматирования                   |
+| `npm run type-check`   | проверка TypeScript без генерации файлов  |
 
 ## Правила разработки
 
